@@ -27,3 +27,7 @@ progressView.progress = 0.3;
 	config.endAngle = M_PI_4;
 }];
 ```
+
+<!--需要更新的问题：
+1. 检测start,end 来确定方向
+2. 添加默认进度label-->
