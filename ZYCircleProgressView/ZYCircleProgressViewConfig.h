@@ -23,6 +23,8 @@
 @property (nonatomic, assign) CGFloat startAngle;
 /** 结束角度 弧度制 */
 @property (nonatomic, assign) CGFloat endAngle;
+/** 是否顺时针 */
+@property (nonatomic, assign) BOOL clockwise;
 
 + (instancetype)defaultConfig;
 

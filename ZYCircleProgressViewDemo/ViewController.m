@@ -37,8 +37,9 @@
         config.backLineColor = [UIColor lightGrayColor];
         config.progressLineColor = [UIColor orangeColor];
         config.lineWidth = 2;
-        config.startAngle = - (M_PI + M_PI_4);
-        config.endAngle = M_PI_4;
+        config.startAngle = M_PI_4;
+        config.endAngle = - (M_PI + M_PI_4);
+        config.clockwise = NO;
     }];
 }
 
