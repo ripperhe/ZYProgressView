@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "ZYCircleProgressViewConfig.h"
 
-@interface ZYCircleProgressView : UIView
+@interface ZYCircleProgressView : UIControl
 
 /** 配置 */
 @property (nonatomic, strong, readonly) ZYCircleProgressViewConfig *config;

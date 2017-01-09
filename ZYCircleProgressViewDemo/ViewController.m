@@ -26,8 +26,12 @@
     progressView.progress = 0.3;
     [self.view addSubview:progressView];
     self.progressView = progressView;
+    
+    [self.progressView addTarget:self action:@selector(click:) forControlEvents:UIControlEventTouchUpInside];
+    [self.progressView addTarget:self action:@selector(valueChange:) forControlEvents:UIControlEventValueChanged];
 
-
+    
+    
     // 示例 2
     ZYCircleProgressView *progressView2 = [[ZYCircleProgressView alloc] initWithFrame:CGRectMake(100, 250, 100, 100)];
     [self.view addSubview:progressView2];
@@ -43,14 +47,21 @@
     }];
 }
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+- (void)click:(ZYCircleProgressView *)sender
 {
+    NSLog(@"click");
+    
     [self.progressView updateConfig:^(ZYCircleProgressViewConfig *config) {
-        config.lineWidth = 3;
+//        config.lineWidth = 3;
         config.lineCap = kCALineCapSquare;
     }];
-
+    
     self.progressView.progress = 0.8;
+}
+
+- (void)valueChange:(ZYCircleProgressView *)sender
+{
+    NSLog(@"valueChange");
 }
 
 @end

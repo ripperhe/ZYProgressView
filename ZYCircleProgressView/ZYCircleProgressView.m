@@ -62,6 +62,8 @@
 #pragma mark - setter
 - (void)setProgress:(CGFloat)progress
 {
+    CGFloat lastProgress = _progress;
+    
     if (progress <= 0) {
         _progress = 0;
     }else if (progress >= 1) {
@@ -71,6 +73,10 @@
     }
     
     self.progressLayer.strokeEnd = _progress;
+    
+    if (lastProgress != _progress) {
+        [self sendActionsForControlEvents:UIControlEventValueChanged];
+    }
 }
 
 #pragma mark - getter
