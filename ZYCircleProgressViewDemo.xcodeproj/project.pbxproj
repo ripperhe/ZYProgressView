@@ -13,8 +13,6 @@
 		C95594821E1F8C8C00D352ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C95594801E1F8C8C00D352ED /* Main.storyboard */; };
 		C95594841E1F8C8C00D352ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C95594831E1F8C8C00D352ED /* Assets.xcassets */; };
 		C95594871E1F8C8C00D352ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C95594851E1F8C8C00D352ED /* LaunchScreen.storyboard */; };
-		C95594921E1F8C8C00D352ED /* ZYCircleProgressViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C95594911E1F8C8C00D352ED /* ZYCircleProgressViewDemoTests.m */; };
-		C955949D1E1F8C8C00D352ED /* ZYCircleProgressViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C955949C1E1F8C8C00D352ED /* ZYCircleProgressViewDemoUITests.m */; };
 		C95594AD1E1F8CBD00D352ED /* ZYCircleProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = C95594AC1E1F8CBD00D352ED /* ZYCircleProgressView.m */; };
 		C95594B71E1F997A00D352ED /* ZYCircleProgressViewConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = C95594B61E1F997A00D352ED /* ZYCircleProgressViewConfig.m */; };
 /* End PBXBuildFile section */
@@ -48,11 +46,7 @@
 		C95594861E1F8C8C00D352ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C95594881E1F8C8C00D352ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C955948D1E1F8C8C00D352ED /* ZYCircleProgressViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZYCircleProgressViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C95594911E1F8C8C00D352ED /* ZYCircleProgressViewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYCircleProgressViewDemoTests.m; sourceTree = "<group>"; };
-		C95594931E1F8C8C00D352ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C95594981E1F8C8C00D352ED /* ZYCircleProgressViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZYCircleProgressViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C955949C1E1F8C8C00D352ED /* ZYCircleProgressViewDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYCircleProgressViewDemoUITests.m; sourceTree = "<group>"; };
-		C955949E1E1F8C8C00D352ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C95594AB1E1F8CBD00D352ED /* ZYCircleProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYCircleProgressView.h; sourceTree = "<group>"; };
 		C95594AC1E1F8CBD00D352ED /* ZYCircleProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYCircleProgressView.m; sourceTree = "<group>"; };
 		C95594B51E1F997A00D352ED /* ZYCircleProgressViewConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYCircleProgressViewConfig.h; sourceTree = "<group>"; };
@@ -89,8 +83,6 @@
 			children = (
 				C95594AA1E1F8CAC00D352ED /* ZYCircleProgressView */,
 				C95594761E1F8C8C00D352ED /* ZYCircleProgressViewDemo */,
-				C95594901E1F8C8C00D352ED /* ZYCircleProgressViewDemoTests */,
-				C955949B1E1F8C8C00D352ED /* ZYCircleProgressViewDemoUITests */,
 				C95594751E1F8C8C00D352ED /* Products */,
 			);
 			sourceTree = "<group>";
@@ -127,24 +119,6 @@
 				C95594781E1F8C8C00D352ED /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		C95594901E1F8C8C00D352ED /* ZYCircleProgressViewDemoTests */ = {
-			isa = PBXGroup;
-			children = (
-				C95594911E1F8C8C00D352ED /* ZYCircleProgressViewDemoTests.m */,
-				C95594931E1F8C8C00D352ED /* Info.plist */,
-			);
-			path = ZYCircleProgressViewDemoTests;
-			sourceTree = "<group>";
-		};
-		C955949B1E1F8C8C00D352ED /* ZYCircleProgressViewDemoUITests */ = {
-			isa = PBXGroup;
-			children = (
-				C955949C1E1F8C8C00D352ED /* ZYCircleProgressViewDemoUITests.m */,
-				C955949E1E1F8C8C00D352ED /* Info.plist */,
-			);
-			path = ZYCircleProgressViewDemoUITests;
 			sourceTree = "<group>";
 		};
 		C95594AA1E1F8CAC00D352ED /* ZYCircleProgressView */ = {
@@ -303,7 +277,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C95594921E1F8C8C00D352ED /* ZYCircleProgressViewDemoTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,7 +284,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C955949D1E1F8C8C00D352ED /* ZYCircleProgressViewDemoUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,6 +497,7 @@
 				C95594A31E1F8C8C00D352ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C95594A41E1F8C8C00D352ED /* Build configuration list for PBXNativeTarget "ZYCircleProgressViewDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -533,6 +506,7 @@
 				C95594A61E1F8C8C00D352ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C95594A71E1F8C8C00D352ED /* Build configuration list for PBXNativeTarget "ZYCircleProgressViewDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -541,6 +515,7 @@
 				C95594A91E1F8C8C00D352ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
