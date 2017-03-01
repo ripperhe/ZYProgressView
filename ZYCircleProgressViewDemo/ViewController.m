@@ -47,6 +47,11 @@
     }];
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    self.progressView.progress = 0.8;
+}
+
 - (void)click:(ZYCircleProgressView *)sender
 {
     NSLog(@"click");
