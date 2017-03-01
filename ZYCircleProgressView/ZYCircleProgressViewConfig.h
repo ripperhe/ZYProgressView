@@ -26,6 +26,4 @@
 /** 是否顺时针 */
 @property (nonatomic, assign) BOOL clockwise;
 
-+ (instancetype)defaultConfig;
-
 @end

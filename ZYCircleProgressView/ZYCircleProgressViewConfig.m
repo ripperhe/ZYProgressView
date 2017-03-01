@@ -10,19 +10,20 @@
 
 @implementation ZYCircleProgressViewConfig
 
-+ (instancetype)defaultConfig
+
+- (instancetype)init
 {
-    ZYCircleProgressViewConfig *config = [[ZYCircleProgressViewConfig alloc] init];
-    config.lineWidth = 2;
-    config.lineCap = kCALineCapRound;
-    config.backLineColor = [UIColor colorWithRed:0.93 green:0.93 blue:0.93 alpha:1.00];
-    config.progressLineColor = [UIColor colorWithRed:0.14 green:0.78 blue:0.54 alpha:1.00];
-    config.startAngle = - M_PI_2;
-    config.endAngle = M_PI + M_PI_2;
-    config.clockwise = YES;
-    return config;
+    self = [super init];
+    if (self) {
+        self.lineWidth = 2;
+        self.lineCap = kCALineCapRound;
+        self.backLineColor = [UIColor colorWithRed:0.93 green:0.93 blue:0.93 alpha:1.00];
+        self.progressLineColor = [UIColor colorWithRed:0.14 green:0.78 blue:0.54 alpha:1.00];
+        self.startAngle = - M_PI_2;
+        self.endAngle = M_PI + M_PI_2;
+        self.clockwise = YES;
+    }
+    return self;
 }
-
-
 
 @end

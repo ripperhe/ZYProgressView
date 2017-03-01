@@ -107,7 +107,7 @@
 - (ZYCircleProgressViewConfig *)config
 {
     if (!_config) {
-        _config = [ZYCircleProgressViewConfig defaultConfig];
+        _config = [ZYCircleProgressViewConfig new];
     }
     return _config;
 }
