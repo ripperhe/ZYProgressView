@@ -2,11 +2,11 @@
 //  ZYCircleProgressViewConfig.h
 //  ZYCircleProgressViewDemo
 //
+//  GitHub https://github.com/ripperhe
 //  Created by ripper on 2017/1/6.
 //  Copyright © 2017年 ripper. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
 @interface ZYCircleProgressViewConfig : NSObject
