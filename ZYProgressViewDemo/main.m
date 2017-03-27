@@ -1,8 +1,8 @@
 //
 //  main.m
-//  ZYCircleProgressViewDemo
+//  ZYProgressViewDemo
 //
-//  Created by ripper on 2017/1/6.
+//  Created by ripper on 2017/3/27.
 //  Copyright © 2017年 ripper. All rights reserved.
 //
 
