@@ -45,6 +45,7 @@
     
     self.backLayer.backgroundColor = self.config.backLineColor.CGColor;
     self.progressLayer.backgroundColor = self.config.progressLineColor.CGColor;
+    _dotLayer.backgroundColor = self.config.dotColor.CGColor;
     [self updateFrame];
 }
 
