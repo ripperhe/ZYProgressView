@@ -13,6 +13,7 @@
 @interface CircleViewController ()
 
 @property (nonatomic, weak) ZYCircleProgressView *progressView;
+@property (nonatomic, weak) ZYCircleProgressView *progressView2;
 
 @end
 
@@ -38,20 +39,24 @@
     ZYCircleProgressView *progressView2 = [[ZYCircleProgressView alloc] initWithFrame:CGRectMake(100, 300, 100, 100)];
     [self.view addSubview:progressView2];
     
-    progressView2.progress = 0.7;
+    progressView2.progress = 0.3;
     [progressView2 updateConfig:^(ZYCircleProgressViewConfig *config) {
         config.backLineColor = [UIColor lightGrayColor];
         config.progressLineColor = [UIColor orangeColor];
-        config.lineWidth = 2;
-        config.startAngle = M_PI_4;
-        config.endAngle = - (M_PI + M_PI_4);
-        config.clockwise = NO;
+        config.lineWidth = 6;
+        config.startAngle = M_PI_2 + M_PI_4;
+        config.endAngle = M_PI * 2 + M_PI_2 - M_PI_4;
+        config.clockwise = YES;
     }];
+    
+    self.progressView2 = progressView2;
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-    self.progressView.progress = 0.8;
+//    self.progressView.progress = 0.8;
+    
+    self.progressView2.progress = 0.8;
 }
 
 - (void)click:(ZYCircleProgressView *)sender
