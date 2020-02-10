@@ -6,7 +6,7 @@
 
 ## Snapshot
 
-![](https://raw.githubusercontent.com/ripperhe/Resource/master/20170327/lineprogressview.png) ![](https://raw.githubusercontent.com/ripperhe/Resource/master/20170327/circleprogressview.png)
+![](https://raw.githubusercontent.com/ripperhe/oss/master/2017/0327/lineprogressview.png) ![](https://raw.githubusercontent.com/ripperhe/oss/master/2017/0327/circleprogressview.png)
 
 ## Example
 
